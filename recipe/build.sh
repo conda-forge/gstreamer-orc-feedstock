@@ -2,6 +2,6 @@
 set -euo pipefail
 
 meson buildir
-meson configure buildir -Dprefix=${PREFIX} -Dlibdir=${PREFIX}/lib
+meson configure buildir --prefix=${PREFIX} --libdir=${PREFIX}/lib
 ninja -C buildir
 ninja -C buildir install
