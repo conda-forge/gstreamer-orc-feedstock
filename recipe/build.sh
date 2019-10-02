@@ -1,7 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
-./configure --prefix=${PREFIX}
-make -j${CPU_COUNT}
-make check
-make install
+meson setup buildir --prefix=${PREFIX} --libdir=${PREFIX}/lib
+ninja -C buildir
+ninja -C buildir install
