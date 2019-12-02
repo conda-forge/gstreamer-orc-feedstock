@@ -8,9 +8,11 @@ package:
 source:
   url: https://gstreamer.freedesktop.org/data/src/orc/orc-{{version}}.tar.xz
   sha256: a0ab5f10a6a9ae7c3a6b4218246564c3bf00d657cbdf587e6d34ec3ef0616075
+  patches:
+    - 0001-Add-install_rpath-to-meson.build.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
