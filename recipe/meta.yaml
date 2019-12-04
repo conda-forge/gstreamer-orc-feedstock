@@ -33,7 +33,7 @@ test:
  
 about:
   home: https://gstreamer.freedesktop.org/modules/orc.html
-  license: Custom
+  license: BSD-2-Clause AND BSD-3-Clause
   license_file: COPYING
   summary: 'Optimized Inner Loop Runtime Compiler'
 
