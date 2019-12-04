@@ -22,8 +22,12 @@ requirements:
     - meson
 
 test:
+  requires:
+    - chrpath  # [linux]
   commands:
     - test -f ${PREFIX}/lib/liborc-0.4${SHLIB_EXT}  # [unix]
+    - chrpath -l ${PREFIX}/lib/liborc-0.4.so      | grep -qF 'RPATH=$ORIGIN/.'  # [linux]
+    - chrpath -l ${PREFIX}/lib/liborc-0.4-test.so | grep -qF 'RPATH=$ORIGIN/.'  # [linux]
     - orcc --help
     - orc-bugreport --help
  
