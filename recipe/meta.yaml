@@ -19,6 +19,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - meson
+    - ninja
 
 test:
   requires:
