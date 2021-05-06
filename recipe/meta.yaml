@@ -28,7 +28,7 @@ test:
     - chrpath  # [linux]
   commands:
     - test -f ${PREFIX}/lib/liborc-{{ majmin }}${SHLIB_EXT}  # [unix]
-    - if not exist %PREFIX%\\Library\\bin\\orc-{{ majmin }}.dll exit 1  # [win]
+    - if not exist %PREFIX%\\Library\\bin\\orc-{{ majmin }}-0.dll exit 1  # [win]
     - if not exist %PREFIX%\\Library\\lib\\orc-{{ majmin }}.lib exit 1  # [win]
     - chrpath -l ${PREFIX}/lib/liborc-{{ majmin }}.so      | grep -qF 'RPATH=$ORIGIN/.'  # [linux]
     - chrpath -l ${PREFIX}/lib/liborc-test-{{ majmin }}.so | grep -qF 'RPATH=$ORIGIN/.'  # [linux]
