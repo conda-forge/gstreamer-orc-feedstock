@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -eo pipefail
 
 meson setup buildir ${MESON_ARGS} --buildtype=release --prefix=${PREFIX} -Dlibdir=lib
 ninja -C buildir
