@@ -22,3 +22,8 @@ if errorlevel 1 exit 1
 
 ninja -C forgebuild install -j %CPU_COUNT%
 if errorlevel 1 exit 1
+
+:: don't install static library (CFEP #18)
+:: (easier to remove it than patch to disable it in the build)
+del /q /f "%LIBRARY_LIB%\liborc*.a"
+if errorlevel 1 exit 1
