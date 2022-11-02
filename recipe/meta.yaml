@@ -1,5 +1,5 @@
 {% set name = "gstreamer-orc" %}
-{% set version = "0.4.32" %}
+{% set version = "0.4.33" %}
 {% set majmin = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,14 +8,12 @@ package:
 
 source:
   url: https://gstreamer.freedesktop.org/data/src/orc/orc-{{ version }}.tar.xz
-  sha256: a66e3d8f2b7e65178d786a01ef61f2a0a0b4d0b8370de7ce134ba73da4af18f0
+  sha256: 844e6d7db8086f793f57618d3d4b68d29d99b16034e71430df3c21cfd3c3542a
   patches:
     - 0001-Add-install_rpath-to-meson.build.patch
-    # next patch is upstream, should be able to remove after 0.4.32
-    - 0002-Fix-powerpc-build-with-kernel-lt-411.patch
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
