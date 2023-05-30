@@ -1,11 +1,11 @@
-About gstreamer-orc
-===================
+About gstreamer-orc-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gstreamer-orc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gstreamer.freedesktop.org/modules/orc.html
 
 Package license: BSD-2-Clause AND BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gstreamer-orc-feedstock/blob/main/LICENSE.txt)
 
 Summary: Optimized Inner Loop Runtime Compiler
 
