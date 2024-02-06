@@ -1,5 +1,5 @@
 {% set name = "gstreamer-orc" %}
-{% set version = "0.4.36" %}
+{% set version = "0.4.37" %}
 {% set majmin = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://gstreamer.freedesktop.org/data/src/orc/orc-{{ version }}.tar.xz
-  sha256: 83b074cb67317d58bef1e8d0cc862f7ae8a77a45bbff056a1f987c6488b2f5fd
+  sha256: 85638c0d447d989cd0d7e03406adbfbc380e67db2a622a4727a0ce3d440b2974
   patches:
     - 0001-Add-install_rpath-to-meson.build.patch
 
