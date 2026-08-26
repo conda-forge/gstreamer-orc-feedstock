@@ -13,7 +13,7 @@ source:
     - 0001-Add-install_rpath-to-meson.build.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -43,4 +43,5 @@ about:
 extra:
   recipe-maintainers:
     - ryanvolz
+    - luhenry
     - sebastian-luna-valero
